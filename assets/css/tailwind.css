@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {@apply bg-black bg-cover bg-center bg-no-repeat flex justify-center items-center}
+
+* {@apply p-0 m-0}
+
+@layer components {
+    .logo {@apply mb-[40px] w-[140px] h-[140px] rounded-md bg-[url('@/assets/images/1-MNoil.jpg')] bg-cover bg-center bg-no-repeat shadow-2xl shadow-yellow-700/80}
+    .bodyclass {@apply flex justify-center items-center bg-white/90 md:bg-white py-20 px-10 md:p-12 rounded-sm flex flex-col md:my-10}
+    .form {@apply flex flex-col gap-[20px]}
+    .input {@apply text-orange-900 font-extrabold text-[20px] md:w-[380px] h-[40px] outline-orange-700 px-[20px] py-[8px] rounded-sm bg-gray-100}
+}

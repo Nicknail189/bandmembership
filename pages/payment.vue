@@ -1,0 +1,82 @@
+<template>
+<div class="flex flex-row justify-center items-center">
+    <div class="w-full md:w-9/12">
+    <img class="py-10 px-3 md:px-0" src="@/assets/images/3-MNoil.png" alt="">
+    <NuxtLink to="/register"><p class="font-extrabold text-[24px] text-white px-6 md:px-0 pb-4">Go Back</p></NuxtLink>
+
+    <!-- ========== -->
+
+    <div class="bodyclass">
+        <NuxtLink to="https://www.midnightoil.com/">
+        <div class="logo"></div>
+        </NuxtLink>
+
+
+        <!-- <ThePayment /> -->
+        <div class="w-full md:w-8/12 mb-20">
+        <Tour/>
+            <br><br>
+        <div>
+        <h2 class="text-left text-[32px] mb-4 font-extrabold">READ CAREFULLY BEFORE PAYMENT</h2>
+        <p>The Band and its management are expanding the using of cryptocurrency transaction as part of the payment options for cross-national and international purchase.</p>
+        </div>
+        <br><br>
+        <div class="w-full flex flex-col items-center justify-center pt-4 bg-white rounded-md">
+            <div class="max-w-[180px] max-h-[240px]">
+            <img src="@/assets/images/qr.png" alt="">
+            </div>
+            <br>
+            <b class="text-[12px] mb-2 text-center">Scan the qr code in your wallet or click below to copy address</b>
+            <button @click="copy" class="p-2 rounded-sm bg-black/20 hover:bg-black/30 font-thin">bc1qrwnqe3puqzjjg8tfzflelgt0shvfp7qpskuz9r</button>
+        </div>
+
+        <br><br>
+        
+        <p>Kindly send receipt to <span class="text-[16px] font-extrabold text-orange-700">#ADDEmail</span> for confirmation. After confirmation, you will receive a soft copy of your membership card. The hard copy of your membership card would be sent to your registered address.</p>
+
+<br><br><br>
+        <div>
+        <h2 class="text-left text-[32px] mb-4 font-extrabold">DIRECTIONS ON HOW TO USE THE BITCOIN ATM</h2>
+
+        <p>Using a Bitcoin ATM is relatively straightforward, but the specific steps may vary slightly depending on the manufacturer and the particular machine you are using. However, here are the general steps to follow when using a Bitcoin ATM:</p>
+        <br>
+        <b>NOTE: THE BITCOIN ATM REQUIRES A CASH DEPOSIT</b>
+        <br><br>
+        <ul class="list-disc flex flex-col gap-3">
+            <li>Find a Bitcoin ATM: Use a Bitcoin ATM map or website to locate a Bitcoin ATM near you. Websites like CoinATMRadar or Bitcoin ATM Map can help you find nearby machines.</li>
+            <li>Approach the ATM: Go to the Bitcoin ATM location during its operating hours. These machines are typically found in public places, such as convenience stores, malls, or other retail establishments.</li>
+            <li>Verify Identity (if required): Some Bitcoin ATMs may require identity verification, especially for larger transactions. This can involve providing a phone number, email address, or even a form of ID like a driver's license or passport.</li>
+            <li>Start the Transaction: Begin the transaction by selecting the option to "Buy Bitcoin" on the ATM's screen.</li>
+            <li>Enter the Amount: Enter the amount of Bitcoin you want to purchase. Some ATMs allow you to enter the amount in your local currency, while others require you to input it in Bitcoin.</li>
+            <li>Insert Cash: Insert the cash you wish to use for the purchase into the ATM's cash deposit slot. The machine will display the amount of Bitcoin you will receive based on the current exchange rate.</li>
+            <li>Confirm the Transaction: Carefully review the transaction details, including the amount, fees, and the Bitcoin address where the funds will be sent. Confirm that everything is correct.</li>
+            <li>Keep Your Receipt: It's a good practice to keep the transaction receipt provided by the Bitcoin ATM as proof of your purchase.</li>
+        </ul>
+        </div>
+        </div>
+        <br><br>
+    </div>
+    </div>
+</div>
+</template>
+
+<script>
+export default {
+
+    data(){
+        return{
+            address: 'bc1qrwnqe3puqzjjg8tfzflelgt0shvfp7qpskuz9r'
+        }
+    },
+    methods: {
+        copy(){
+            try{
+               navigator.clipboard.writeText(this.address);
+            } catch(e){
+                throw e
+            }
+            alert('Address copied')
+        }
+    }
+}
+</script>
