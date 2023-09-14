@@ -45,7 +45,7 @@
 
                 <br><br>
                 <!-- <NuxtLink to="payment"> -->
-                <button @click="submitBtn" class="border-[4px] border-orange-700 md:border-0 px-10 py-[10px] text-[20px] font-extrabold rounded-sm md:bg-gray-200 hover:bg-black"><h4>PROCEED TO PAYMENT</h4></button>
+                <button @click="submitBtn" class="border-[4px] border-orange-700 md:border-0 px-3 md:px-10 py-[10px] text-[20px] font-extrabold rounded-sm md:bg-gray-200 hover:bg-black"><h4>PROCEED TO PAYMENT</h4></button>
                 <!-- </NuxtLink> -->
             </form>
         </div>
