@@ -17,7 +17,8 @@
         <div class="w-full md:w-8/12 mb-20">
         <Tour/>
             <br><br>
-            <img src="/back.png" alt="">
+            <img src="@/assets/images/vip.png" alt="">
+            <br><br>
         <div>
         <h2 class="text-left text-[32px] mb-4 font-extrabold">READ CAREFULLY BEFORE PAYMENT</h2>
         

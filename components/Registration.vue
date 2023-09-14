@@ -7,7 +7,7 @@
         <Tour/>
         <div>
             <br>
-            <form class="form">
+            <form @submit="submitSignin" class="form">
                 <div>
                 <label class="text-orange-900 mb-4" for="firstname">First Name *</label><br>
                 <input class="input" placeholder="Enter First name" type="text" v-model="form.firstname">
@@ -38,10 +38,15 @@
                 <input class="input" placeholder="Enter Country" type="text" v-model="form.country">
                 </div>
 
+                <div>
+                <label class="text-orange-900 mb-4" for="referral">Referral Code *</label><br>
+                <input class="input" placeholder="Enter Referral Code" type="text" v-model="form.referral">
+                </div>
+
                 <br><br>
-                <NuxtLink to="payment">
-                <button class="border-[4px] border-orange-700 md:border-0 px-10 py-[10px] text-[20px] font-extrabold rounded-sm md:bg-gray-200 hover:bg-black"><h4>PROCEED TO PAYMENT</h4></button>
-                </NuxtLink>
+                <!-- <NuxtLink to="payment"> -->
+                <button @click="submitBtn" class="border-[4px] border-orange-700 md:border-0 px-10 py-[10px] text-[20px] font-extrabold rounded-sm md:bg-gray-200 hover:bg-black"><h4>PROCEED TO PAYMENT</h4></button>
+                <!-- </NuxtLink> -->
             </form>
         </div>
     </div>
@@ -59,9 +64,21 @@ export default {
                 address: '',
                 zipcode: '',
                 country: '',
+                referral: '',
             }
         }
     },
+
+    methods: {
+        submitBtn(event){
+      event.preventDefault()
+        if (this.form.referral.trim() === '264973') {
+          this.$router.push("/payment")
+        } else {
+          alert('Incorrect referral code')
+        }
+      }
+    }
 }
 </script>
 
