@@ -24,7 +24,7 @@
         
         <br><br>
 
-        <div class="border-[1px] border-gray-100 rounded-md p-4">
+        <div class="border-[1px] border-gray-100 bg-white/80 rounded-md p-4">
         <div class="flex flex-col md:flex-row items-center justify-between gap-4">
             <NuxtLink to="https://www.paypal.com/us/home"><p class="text-[14px] text-blue-900 font-bold uppercase">visit website</p></NuxtLink>
             <NuxtLink to="https://www.paypal.com/us/home"><img class="w-40 rounded-md" src="@/assets/images/paypal.png" alt=""></NuxtLink>
