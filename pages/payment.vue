@@ -1,6 +1,7 @@
 <template>
 <div class="flex flex-row justify-center items-center">
     <div class="w-full md:w-9/12">
+    <Navigation/>
     <img class="py-10 px-3 md:px-0" src="@/assets/images/3-MNoil.png" alt="">
     <NuxtLink to="/register"><p class="font-extrabold text-[24px] text-white px-6 md:px-0 pb-4">Go Back</p></NuxtLink>
 
@@ -16,6 +17,7 @@
         <div class="w-full md:w-8/12 mb-20">
         <Tour/>
             <br><br>
+            <img src="/back.png" alt="">
         <div>
         <h2 class="text-left text-[32px] mb-4 font-extrabold">READ CAREFULLY BEFORE PAYMENT</h2>
         
