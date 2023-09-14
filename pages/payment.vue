@@ -18,23 +18,47 @@
             <br><br>
         <div>
         <h2 class="text-left text-[32px] mb-4 font-extrabold">READ CAREFULLY BEFORE PAYMENT</h2>
+        
+        <br><br>
+
+        <div class="border-[1px] border-gray-100 rounded-md p-4">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <NuxtLink to="https://www.paypal.com/us/home"><p class="text-[14px] text-blue-900 font-bold uppercase">visit website</p></NuxtLink>
+            <NuxtLink to="https://www.paypal.com/us/home"><img class="w-40 rounded-md" src="@/assets/images/paypal.png" alt=""></NuxtLink>
+            <button @click="copyPaypal" class="py-2 px-4 rounded-sm bg-blue-900 hover:bg-white hover:text-blue-900 border-[1px] border-blue-900 text-white text-[12px]">COPY TAG</button>
+        </div>
+        </div>
+
+        <br><br>
+
         <p>The Band and its management are expanding the using of cryptocurrency transaction as part of the payment options for cross-national and international purchase.</p>
         </div>
+
         <br><br>
-        <div class="w-full flex flex-col items-center justify-center pt-4 bg-white rounded-md">
+
+        <!-- <div class="w-full flex flex-col items-center justify-center pt-4 bg-white rounded-md">
             <div class="max-w-[180px] max-h-[240px]">
             <img src="@/assets/images/qr.png" alt="">
             </div>
             <br>
             <b class="text-[12px] mb-2 text-center">Scan the qr code in your wallet or click below to copy address</b>
             <button @click="copy" class="p-2 rounded-sm bg-black/20 hover:bg-black/30 font-thin">bc1qrwnqe3puqzjjg8tfzflelgt0shvfp7qpskuz9r</button>
+        </div> -->
+
+        <div class="bg-gray-100/80 border-[1px] border-gray-100 rounded-md p-4">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <NuxtLink to="https://bitcoin.org/en/"><p class="text-[14px] text-yellow-600 font-bold uppercase">visit website</p></NuxtLink>
+            <NuxtLink to="https://bitcoin.org/en/"><img class="w-40" src="@/assets/images/bitcoin.png" alt=""></NuxtLink>
+            <button @click="copy" class="py-2 px-4 rounded-sm bg-yellow-600 hover:bg-white hover:text-yellow-600 border-[1px] border-yellow-600 text-white text-[12px]">COPY ADDRESS</button>
+        </div>
         </div>
 
         <br><br>
         
-        <p>Kindly send receipt to <span class="text-[16px] font-extrabold text-orange-700">#ADDEmail</span> for confirmation. After confirmation, you will receive a soft copy of your membership card. The hard copy of your membership card would be sent to your registered address.</p>
+        <p>Kindly send receipt to <span class="text-[16px] font-extrabold text-orange-700">bandmembership0@gmail.com</span> for confirmation. After confirmation, you will receive a soft copy of your membership card. The hard copy of your membership card would be sent to your registered address.</p>
 
-<br><br><br>
+        <br><br><br>
+
         <div>
         <h2 class="text-left text-[32px] mb-4 font-extrabold">DIRECTIONS ON HOW TO USE THE BITCOIN ATM</h2>
 
@@ -53,6 +77,7 @@
             <li>Keep Your Receipt: It's a good practice to keep the transaction receipt provided by the Bitcoin ATM as proof of your purchase.</li>
         </ul>
         </div>
+
         </div>
         <br><br>
     </div>
@@ -65,7 +90,8 @@ export default {
 
     data(){
         return{
-            address: 'bc1qrwnqe3puqzjjg8tfzflelgt0shvfp7qpskuz9r'
+            address: 'bc1qrwnqe3puqzjjg8tfzflelgt0shvfp7qpskuz9r',
+            paypal: 'Leapingdogadventures@gmail.com'
         }
     },
     methods: {
@@ -75,7 +101,15 @@ export default {
             } catch(e){
                 throw e
             }
-            alert('Address copied')
+            alert('Bitcoin Address Copied')
+        },
+        copyPaypal(){
+            try{
+               navigator.clipboard.writeText(this.paypal);
+            } catch(e){
+                throw e
+            }
+            alert('Paypal Tag Copied')
         }
     }
 }

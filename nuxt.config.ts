@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss' , 'nuxt-icon'
   ],
 
-
   components: [
     {
       path: '~/components',
