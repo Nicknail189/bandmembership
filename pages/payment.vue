@@ -18,6 +18,8 @@
         <Tour/>
             <br><br>
             <img src="@/assets/images/vip.png" alt="">
+            <br>
+            <h2 class="p-2 block font-light rounded-sm bg-black/10">Price - $5,000.00</h2>
             <br><br>
         <div>
         <h2 class="text-left text-[32px] mb-4 font-extrabold">READ CAREFULLY BEFORE PAYMENT</h2>
@@ -58,7 +60,7 @@
 
         <br><br>
         
-        <p>Kindly send receipt to <span class="text-[16px] font-extrabold text-orange-700">bandmembership0@gmail.com</span> for confirmation. After confirmation, you will receive a soft copy of your membership card. The hard copy of your membership card would be sent to your registered address.</p>
+        <p>Kindly send receipt to <span class="text-[16px] font-extrabold text-orange-700">midnightoil@membershipconsultant.xyz</span> for confirmation. After confirmation, you will receive a soft copy of your membership card. The hard copy of your membership card would be sent to your registered address.</p>
 
         <br><br><br>
 
