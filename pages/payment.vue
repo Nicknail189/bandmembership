@@ -1,8 +1,9 @@
 <template>
 <div class="flex flex-row justify-center items-center">
     <div class="w-full md:w-9/12">
-    <!-- <Navigation/> -->
-    <NuxtLink to="https://www.zztop.com/"><div class="flex justify-center"><img class="py-10 px-3 md:px-0 w-4/12" src="@/assets/images/zz/zzlogo.png" alt=""></div></NuxtLink>
+    <Navigation/>
+    <!-- <NuxtLink to="https://www.zztop.com/"><div class="flex justify-center"><img class="py-10 px-3 md:px-0 w-4/12" src="@/assets/images/zz/zzlogo.png" alt=""></div></NuxtLink> -->
+    <NuxtLink to="https://foofighters.com/"><div class="flex justify-center"><img class="py-10 px-3 md:px-0 w-4/12" src="https://foofighters.com/wp-content/themes/foo-fighters/dist/fae79924e68901495343.svg" alt=""></div></NuxtLink>
 
 
     <!-- <img class="py-10 px-3 md:px-0" src="@/assets/images/3-MNoil.png" alt=""> -->
@@ -15,11 +16,11 @@
         <div class="logo"></div>
         </NuxtLink> -->
 
-         <NuxtLink to="https://store.zztop.com/">
+         <!-- <NuxtLink to="https://store.zztop.com/">
         <div class="flex justify-center mb-10">
         <img src="@/assets/images/zz/zz2.jpg" alt="">
         </div>
-        </NuxtLink>
+        </NuxtLink> -->
 
 
         <!-- <ThePayment /> -->
@@ -27,7 +28,8 @@
         <Tour/>
             <br><br>
             <!-- <img src="@/assets/images/vip.png" alt=""> -->
-            <img src="@/assets/images/zz/card.jpg" alt="">
+            <!-- <img src="@/assets/images/zz/card.jpg" alt=""> -->
+                <img src="https://shop.foofighters.com/cdn/shop/files/FFI125150.png?v=1691784927&width=533" alt="">
             <br>
             <h2 class="p-2 block font-light rounded-sm bg-black/10">Price - $5,000.00</h2>
             <br><br>

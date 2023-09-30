@@ -4,11 +4,11 @@
         <div class="logo"></div>
         </NuxtLink> -->
 
-        <NuxtLink to="https://store.zztop.com/">
+        <!-- <NuxtLink to="https://store.zztop.com/">
         <div class="flex justify-center mb-10">
         <img src="@/assets/images/zz/zz2.jpg" alt="">
         </div>
-        </NuxtLink>
+        </NuxtLink> -->
 
         <Instruction/>
     </div>
