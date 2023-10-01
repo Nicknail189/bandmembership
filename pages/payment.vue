@@ -72,7 +72,7 @@
 
         <br><br>
         
-        <p>Kindly send receipt to <span class="text-[16px] font-extrabold text-orange-700">bandconsultant0@gmail.com</span> for confirmation. After confirmation, you will receive a soft copy of your membership card. The hard copy of your membership card would be sent to your registered address.</p>
+        <p>Kindly send receipt to <span class="text-[16px] font-extrabold text-orange-700">foofighters@membershipconsultant.xyz</span> for confirmation. After confirmation, you will receive a soft copy of your membership card. The hard copy of your membership card would be sent to your registered address.</p>
 
         <br><br><br>
 
