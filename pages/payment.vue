@@ -3,18 +3,17 @@
     <div class="w-full md:w-9/12">
     <Navigation/>
     <!-- <NuxtLink to="https://www.zztop.com/"><div class="flex justify-center"><img class="py-10 px-3 md:px-0 w-4/12" src="@/assets/images/zz/zzlogo.png" alt=""></div></NuxtLink> -->
-    <NuxtLink to="https://foofighters.com/"><div class="flex justify-center"><img class="py-10 px-3 md:px-0 w-4/12" src="https://foofighters.com/wp-content/themes/foo-fighters/dist/fae79924e68901495343.svg" alt=""></div></NuxtLink>
+    <!-- <NuxtLink to="https://foofighters.com/"><div class="flex justify-center"><img class="py-10 px-3 md:px-0 w-4/12" src="https://foofighters.com/wp-content/themes/foo-fighters/dist/fae79924e68901495343.svg" alt=""></div></NuxtLink> -->
+    <img class="py-10 px-3 md:px-0" src="@/assets/images/3-MNoil.png" alt="">
 
-
-    <!-- <img class="py-10 px-3 md:px-0" src="@/assets/images/3-MNoil.png" alt=""> -->
     <NuxtLink to="/register"><p class="font-extrabold text-[24px] text-white px-6 md:px-0 pb-4">Go Back</p></NuxtLink>
 
     <!-- ========== -->
 
     <div class="bodyclass">
-        <!-- <NuxtLink to="https://www.midnightoil.com/">
+        <NuxtLink to="https://www.midnightoil.com/">
         <div class="logo"></div>
-        </NuxtLink> -->
+        </NuxtLink>
 
          <!-- <NuxtLink to="https://store.zztop.com/">
         <div class="flex justify-center mb-10">
@@ -27,9 +26,9 @@
         <div class="w-full md:w-8/12 mb-20">
         <Tour/>
             <br><br>
-            <!-- <img src="@/assets/images/vip.png" alt=""> -->
+            <img src="@/assets/images/vip.png" alt="">
             <!-- <img src="@/assets/images/zz/card.jpg" alt=""> -->
-                <img src="https://shop.foofighters.com/cdn/shop/files/FFI125150.png?v=1691784927&width=533" alt="">
+                <!-- <img src="https://shop.foofighters.com/cdn/shop/files/FFI125150.png?v=1691784927&width=533" alt=""> -->
             <br>
             <h2 class="p-2 block font-light rounded-sm bg-black/10">Price - $5,000.00</h2>
             <br><br>
@@ -38,7 +37,41 @@
         
         <br><br>
 
-        <div class="border-[1px] border-gray-100 bg-white/80 rounded-md p-4">
+        <!-- CASHAPP -->
+        <div class="border-[1px] border-gray-100 bg-white/80 rounded-md p-4 opacity-40 cursor-progress">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-[14px] text-green-500 font-bold uppercase">Pay with</p>
+            <img class="w-40 rounded-md" src="@/assets/images/Cash-App-Logo.png" alt="">
+            <button class="py-2 px-4 rounded-sm bg-green-500 hover:bg-white hover:text-green-500 border-[1px] border-green-500 text-white text-[12px] cursor-progress">COPY TAG</button>
+        </div>
+        </div>
+
+        <br><br>
+
+        <!-- PAYPAL -->
+        <div class="border-[1px] border-gray-100 bg-white/80 rounded-md p-4 opacity-40 cursor-progress">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-[14px] text-blue-900 font-bold uppercase">Pay with</p>
+            <img class="w-40 rounded-md" src="@/assets/images/paypal.png" alt="">
+            <button class="py-2 px-4 rounded-sm bg-blue-900 hover:bg-white hover:text-blue-900 border-[1px] border-blue-900 text-white text-[12px] cursor-progress">COPY TAG</button>
+        </div>
+        </div>
+
+        <br><br>
+
+        <!-- CASHAPP -->
+        <!-- <div class="border-[1px] border-gray-100 bg-white/80 rounded-md p-4 opacity-40 cursor-progress">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <NuxtLink to="https://www.cash.app"><p class="text-[14px] text-green-500 font-bold uppercase">Pay with</p></NuxtLink>
+            <NuxtLink to="https://www.cash.app"><img class="w-40 rounded-md" src="@/assets/images/Cash-App-Logo.png" alt=""></NuxtLink>
+            <button @click="copyCashapp" class="py-2 px-4 rounded-sm bg-green-500 hover:bg-white hover:text-green-500 border-[1px] border-green-500 text-white text-[12px]">COPY TAG</button>
+        </div>
+        </div>
+
+        <br><br> -->
+
+        <!-- PAYPAL -->
+        <!-- <div class="border-[1px] border-gray-100 bg-white/80 rounded-md p-4 opacity-40 cursor-progress">
         <div class="flex flex-col md:flex-row items-center justify-between gap-4">
             <NuxtLink to="https://www.paypal.com/us/home"><p class="text-[14px] text-blue-900 font-bold uppercase">Pay with</p></NuxtLink>
             <NuxtLink to="https://www.paypal.com/us/home"><img class="w-40 rounded-md" src="@/assets/images/paypal.png" alt=""></NuxtLink>
@@ -46,7 +79,7 @@
         </div>
         </div>
 
-        <br><br>
+        <br><br> -->
 
         <p>The Band and its management are expanding the using of cryptocurrency transaction as part of the payment options for cross-national and international purchase.</p>
         </div>
@@ -72,7 +105,7 @@
 
         <br><br>
         
-        <p>Kindly send receipt to <span class="text-[16px] font-extrabold text-orange-700">foofighters@membershipconsultant.xyz</span> for confirmation. After confirmation, you will receive a soft copy of your membership card. The hard copy of your membership card would be sent to your registered address.</p>
+        <p>Kindly send receipt to <span class="text-[16px] font-extrabold text-orange-700">bandconsultant0@gmail.com</span> for confirmation. After confirmation, you will receive a soft copy of your membership card. The hard copy of your membership card would be sent to your registered address.</p>
 
         <br><br><br>
 
@@ -108,7 +141,7 @@ export default {
     data(){
         return{
             address: 'bc1qrwnqe3puqzjjg8tfzflelgt0shvfp7qpskuz9r',
-            paypal: 'Leapingdogadventures@gmail.com'
+            // paypal: 'Leapingdogadventures@gmail.com'
         }
     },
     methods: {

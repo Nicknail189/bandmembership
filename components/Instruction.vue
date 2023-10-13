@@ -3,19 +3,19 @@
     <Tour/>
 
     <br><br><br>
-        <!-- <h1 class="font-extrabold text-[32px] mb-6">The MIDNIGHT OIL MEMBERSHIP CARD REGISTRATION</h1> -->
+        <h1 class="font-extrabold text-[32px] mb-6">The MIDNIGHT OIL MEMBERSHIP CARD REGISTRATION</h1>
         <!-- <h1 class="font-extrabold text-[32px] mb-6">The ZZ Top MEMBERSHIP CARD REGISTRATION</h1> -->
-        <h1 class="font-extrabold text-[32px] mb-6">The FOO FIGHTERS MEMBERSHIP CARD REGISTRATION</h1>
+        <!-- <h1 class="font-extrabold text-[32px] mb-6">The FOO FIGHTERS MEMBERSHIP CARD REGISTRATION</h1> -->
 
     <div class="text-[18px]">
-        <!-- <p>The MIDNIGHT OIL membership registration is here. The band and its management have taken into consideration the acceptance of new secondary fan members with undisputed benefits.</p> -->
+        <p>The MIDNIGHT OIL membership registration is here. The band and its management have taken into consideration the acceptance of new secondary fan members with undisputed benefits.</p>
         <!-- <p>The ZZ Top membership registration is here. The band and its management have taken into consideration the acceptance of new secondary fan members with undisputed benefits.</p> -->
-        <p>The Foo Fighters membership registration is here. The band and its management have taken into consideration the acceptance of new secondary fan members with undisputed benefits.</p>
+        <!-- <p>The Foo Fighters membership registration is here. The band and its management have taken into consideration the acceptance of new secondary fan members with undisputed benefits.</p> -->
         <br>
         <!-- #addcard -->
-        <!-- <img src="@/assets/images/MOMC.png" alt=""> -->
+        <img src="@/assets/images/MOMC.png" alt="">
         <!-- <img src="@/assets/images/zz/card.jpg" alt=""> -->
-        <img src="https://shop.foofighters.com/cdn/shop/files/FFI125150.png?v=1691784927&width=533" alt="">
+        <!-- <img src="https://shop.foofighters.com/cdn/shop/files/FFI125150.png?v=1691784927&width=533" alt=""> -->
         <br>
     </div>
 
